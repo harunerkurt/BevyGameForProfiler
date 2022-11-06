@@ -1,5 +1,5 @@
 [package]
-name = "rust-bevy-air-ace"
+name = "gameForProfiler"
 version = "0.1.0"
 edition = "2021"
 
@@ -11,5 +11,13 @@ bevy_atmosphere = "0.4"
 lerp = "0.4"
 bevy_rapier3d = { version = "*", features = [ "simd-stable", "debug-render" ] }
 rand = "*"
+
+# Enable a small amount of optimization in debug mode
+[profile.dev]
+opt-level = 1
+
+# Enable high optimizations for dependencies (incl. Bevy), but not for our code:
+[profile.dev.package."*"]
+opt-level = 3
 
 

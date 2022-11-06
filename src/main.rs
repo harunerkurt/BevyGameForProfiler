@@ -156,7 +156,7 @@ fn main() {
         //add config resources
         .insert_resource(Msaa {samples: 4})
         .insert_resource(WindowDescriptor{
-            title: "bevy air ace".to_string(),
+            title: "Cmpe 491 - Game For Profile".to_string(),
             width: 800.0,
             height: 600.0,
             ..Default::default()
@@ -270,9 +270,7 @@ fn setup(
     // Start
     commands.spawn_bundle(TextBundle {
         text: Text::from_section(
-            " Bevy Air Ace \n \
-                    \n \
-                    by sabi@nelson-games.de \n \
+            " Game for Profiler \n \
                     \n \
                     control ship with arrow keys \n \
                     fire with space \n \
@@ -735,8 +733,6 @@ fn setup_gameover(
     commands.spawn_bundle(TextBundle {
         text: Text::from_section(
             " Game over \n \
-                    \n \
-                    by sabi@nelson-games.de \n \
                     \n \
                     press any key to start",
             TextStyle {
