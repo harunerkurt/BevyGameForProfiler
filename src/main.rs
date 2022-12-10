@@ -17,7 +17,6 @@ enum GameState {
 
 struct Score {
     best:f32,
-    next:String,
     time:Stopwatch
 }
 
@@ -25,7 +24,6 @@ impl Default for Score{
     fn default() -> Self {
         Self {
             best:10000.0,
-            next:"2".to_string(),
             time:Stopwatch::new()
         }
     }
