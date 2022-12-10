@@ -1498,7 +1498,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "gameForProfiler"
+name = "game_for_profiler"
 version = "0.1.0"
 dependencies = [
  "bevy",
